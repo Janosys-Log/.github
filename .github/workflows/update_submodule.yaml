@@ -1,0 +1,27 @@
+name: Update Submodulo
+on: 
+  repository_dispatch:
+    types: [update_submodule]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          token: ${{ secrets.PAT_DISPATCH  }}
+
+      - name: Configurar Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@janosys.com"
+
+      - name: Atualizar submodulo
+        run: |
+          git pull
+          git submodule update --remote
+          git add Documentos
+          git commit -m "chore: atualização do submodulo `Documentos`"
+          git push https://janosys-Log:${{ secrets.PAT_DISPATCH }}@github.com/janosys-Log/.github.git
