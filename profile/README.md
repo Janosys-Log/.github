@@ -1,5 +1,5 @@
 <p align="center">
-      <img src="./docs/imagens/LogoJanos_vetor.png" alt="logo da Janos Logística Integrada" width="600">
+      <img src="./imagens/LogoJanos_vetor.png" alt="logo da Janos Logística Integrada" width="600">
 </p>
 
 ---
@@ -143,7 +143,7 @@ Projeto idealizado pela FATEC · SJC em conjunto com seus alunos, tendo como par
 
 |      Sprint       |  Previsão  |    Status    |     Histórico     |
 | :---------------: | :--------: | :----------: | :---------------: |
-|        01         | 25/09/2026 |  Concluído  | [Sprint Backlog - MVPI](MVP/sp1.md) |
+|        01         | 25/09/2026 |  Concluído  | [Sprint Backlog - MVPI](./MVP/sp1.md) |
 |        02         | 23/10/2026 |  Em Desenvolvimento  | - |
 |        03         | 20/11/2026 |  planejado  | - |
 | Feira de Soluções | 03/12/2026 |  planejado  | ---- |
